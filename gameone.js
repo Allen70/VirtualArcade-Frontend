@@ -39,5 +39,15 @@ function seekUserInput(currentBalance, cost) {
                 })
             })
             userInput.remove()
+            enterDungeon()
         })
+}
+
+function enterDungeon() {
+    let arcade = document.querySelector('.arcade')
+    arcade.classList.add('hidden')
+    let script = document.createElement('script')
+    script.src = "dungeon.js"
+    document.body.append(script)
+
 }

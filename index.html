@@ -19,11 +19,11 @@
                 <div class="signup-form hidden">
                     <form class="signup">
                         <label>Name</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                         <label>Password</label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" required>
                         <label>Password confirmation</label>
-                        <input type="password" name="password-confirmation">
+                        <input type="password" name="password-confirmation" required>
                         <input type="submit" value="Create new user">
                     </form>
                     <button class="login-button">Oops I need to login</button>
@@ -41,7 +41,7 @@
                     <button class="signup-button">Oops I need to sign up</button>
                 </div>
             </div>
-            <main class="arcade hidden">
+            <section class="arcade hidden">
                 <div class="character-info-container">
                 </div>
                 <div class="screen">
@@ -54,7 +54,13 @@
                 </div>
                 <div class="text-field">
                 </div>
-            </main>
+            </section>
+            <section class="dungeon hidden">
+                <div class="dungeon-text-field">
+                </div>
+                <div class="dungeon-decision">
+                </div>
+            </section>
         </div>
     </body>
 </html>
