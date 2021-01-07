@@ -1,0 +1,84 @@
+body {
+    background-color: #c2c2c2;
+}
+
+.screen { 
+    position: fixed;
+    top: 50px;
+    left: 555px;
+    border: 3px outset #8F322C;
+    width: 800px;
+    height: 500px;
+    background-color: darkslategray;
+}
+
+#avatar {
+    background-color: darkturquoise;
+    width: 16px;
+    height: 16px;
+    position:absolute;
+}
+
+.game-one {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 40px;
+    right: 380px;
+}
+.game-two {
+    background-color: red;
+    width: 30px;
+    height:30px;
+    position: absolute;
+    bottom: 100px;
+    right: 120px;
+}
+.text-field {
+    position: absolute;
+    top: 600px;
+    left:  555px;
+    width: 500px;
+}
+
+.character-info-container {
+    position: relative;
+    top: 32px;
+}
+
+.char-name {
+    font-size: 32px;
+    color: rgb(11, 68, 173);
+    margin: 16px;
+}
+
+.char-coin {
+    font-size: 24px;
+    color: rgb(11, 68, 173);
+    margin: 16px;
+}
+
+
+.login-signup-full {
+    position: relative;
+    top: 150px;
+    left: 50%;
+    max-width: 300px;
+    border: 3px inset #0d7e1c;
+    transform: translate(-50% );
+}
+
+.login-signup-selector {
+    display: flex;
+    justify-content: center;
+}
+
+label, input {
+    display: inline-block;
+    width: 98%;
+}
+
+.hidden {
+    display: none;
+}

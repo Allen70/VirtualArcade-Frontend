@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Click Adventure Home</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="index.js" defer></script>    
+        <script src="loginsignup.js" defer></script>
+        <script src="gameone.js" defer></script>
+    </head>
+    <body>
+        <div class="body-wrap">
+            <div class="login-signup-full">
+                <div class="login-signup-selector">
+                    <button class="signup-button">Sign up</button>
+                    <button class="login-button">Login</button>
+                </div>
+                <div class="signup-form hidden">
+                    <form class="signup">
+                        <label>Name</label>
+                        <input type="text" name="name">
+                        <label>Password</label>
+                        <input type="password" name="password">
+                        <label>Password confirmation</label>
+                        <input type="password" name="password-confirmation">
+                        <input type="submit" value="Create new user">
+                    </form>
+                    <button class="login-button">Oops I need to login</button>
+                </div>
+                <div class="login-form hidden">
+                    <form class="login">
+                        <label>Name</label>
+                        <input type="text" name="name">
+                        <label>Password</label>
+                        <input type="password" name="password">
+                        <label>Password confirmation</label>
+                        <input type="password" name="password-confirmation">
+                        <input type="submit" value="Login">
+                    </form>
+                    <button class="signup-button">Oops I need to sign up</button>
+                </div>
+            </div>
+            <main class="arcade hidden">
+                <div class="character-info-container">
+                </div>
+                <div class="screen">
+                    <div id="avatar" style="bottom: 0px; left: 392px;">
+                    </div>
+                    <div class="game-one solid">
+                    </div>
+                    <div class="game-two solid">
+                    </div>
+                </div>
+                <div class="text-field">
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
