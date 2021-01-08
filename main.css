@@ -3,6 +3,9 @@ body {
     background-color: #c2c2c2;
 }
 
+.arcadeselect {
+    background-color: cornsilk;
+}
 .tooltip {
     position: absolute;
     left: 975px;
@@ -40,8 +43,8 @@ body {
     width: 20px;
     height: 20px;
     position: absolute;
-    bottom: 40px;
-    right: 380px;
+    bottom: 100px;
+    right: 220px;
 }
 .game-two {
     background-color: red;
@@ -49,7 +52,15 @@ body {
     height:30px;
     position: absolute;
     bottom: 100px;
-    right: 120px;
+    right: 440px;
+}
+.coin-machine {
+    background-color: burlywood;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
 }
 .text-field {
     position: absolute;

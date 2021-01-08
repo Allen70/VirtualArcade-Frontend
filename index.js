@@ -29,10 +29,9 @@ function loadCharacterInfo(){
 
 function loadTooltips(){
     const tooltipContainer = document.querySelector('.tooltip')
-    console.log(tooltipContainer)
     let instructions = document.createElement('p')
     instructions.classList.add('startinginstructions')
     instructions.innerHTML = 'To move your Avatar around the arcade use the WASD keys.<br>To interact with a game move your Avatar close and press the Enter key'
     tooltipContainer.append(instructions)
-    setTimeout(() => { tooltipContainer.remove()}, 7000);
+    setTimeout(() => { tooltipContainer.remove()}, 9000);
 }

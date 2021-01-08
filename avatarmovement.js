@@ -76,6 +76,10 @@ function avatarInteract(avatarLeft,avatarBottom,avatarRight,avatarTop){
                   break;
               case "game-two":  
                     interactGameTwo()
+                    break;
+              case "coin-machine":
+                    interactCoinMachine()
+                    break;
               default:
                   break;
           }
@@ -95,6 +99,42 @@ function interactGameTwo(){
         let userInput = document.querySelector('.user-input')
         userInput.remove()
     })
+}
+function interactCoinMachine() {
+    let currentBalance = parseInt(window.localStorage.getItem("coin"))
+    let benefit = 4
+    textfield.innerHTML = `
+    <div class="user-input">
+        <h2> Your current balance is ${currentBalance}. Would you like to spend 1 dollar to get 4 tokens?
+        </h2>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    `
+    let userInput = document.querySelector('.user-input')
+    let yesButton = document.querySelector('.yes')
+    let noButton = document.querySelector('.no')
+        noButton.addEventListener('click', ()=>{
+        userInput.remove()
+        })
+        yesButton.addEventListener('click', ()=>{
+            let newBalance = currentBalance + benefit 
+            let coinShow = document.querySelector('.char-coin')
+            coinShow.textContent = `Coin: ${newBalance}`
+            localStorage.setItem("coin", newBalance)
+            let user = {
+                name: localStorage.user,
+                coins: newBalance
+                }
+            fetch(usersURL, {
+                method: 'PATCH',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify({
+                    user
+                })
+            })
+            userInput.remove()
+        })
 }
 function    canAvatarMoveDown(avatarLeft, avatarRight, avatarBottom){
     value = true
