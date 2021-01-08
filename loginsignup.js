@@ -97,5 +97,3 @@ function postUserToLogin(user){
 function hidelogin(){
     loginSignupFull.remove()
 }
-// window.localStorage.getItem(key)
-// localStorage.removeItem(key)

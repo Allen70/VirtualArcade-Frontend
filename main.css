@@ -1,7 +1,10 @@
 body {
+    height: 942px;
     background-color: #c2c2c2;
 }
-
+.opacity-zero {
+    opacity: 0;
+}
 .screen { 
     position: fixed;
     top: 50px;
