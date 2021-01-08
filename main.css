@@ -2,6 +2,19 @@ body {
     height: 942px;
     background-color: #c2c2c2;
 }
+
+.tooltip {
+    position: absolute;
+    left: 975px;
+    top: 550px;
+    background-color: cornflowerblue;
+}
+
+.startinginstructions {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .opacity-zero {
     opacity: 0;
 }

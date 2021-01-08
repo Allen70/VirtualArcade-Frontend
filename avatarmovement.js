@@ -26,7 +26,7 @@ document.addEventListener("keydown", (event) => {
     let avatarRight = (avatar.offsetLeft + 16)
     let avatarBottom = (avatar.offsetTop + 16)
     switch (event.key){
-        case ("ArrowLeft"):
+        case ("a"):
             canAvatarMoveLeft(avatarTop, avatarBottom, avatarLeft)
             switch(value){
                 case (true):
@@ -35,7 +35,7 @@ document.addEventListener("keydown", (event) => {
                     break
             }
             break
-        case("ArrowRight"):
+        case("d"):
             canAvatarMoveRight(avatarTop, avatarBottom, avatarRight)
             switch(value){
                     case (true):
@@ -44,7 +44,7 @@ document.addEventListener("keydown", (event) => {
                         break
             }
             break
-        case("ArrowUp"):
+        case("w"):
             canAvatarMoveup(avatarLeft, avatarRight, avatarTop)
             switch(value){
                     case (true):
@@ -53,7 +53,7 @@ document.addEventListener("keydown", (event) => {
                         break
             }
             break
-        case("ArrowDown"):
+        case("s"):
             canAvatarMoveDown(avatarLeft, avatarRight, avatarBottom)
             switch(value){
                 case (true):

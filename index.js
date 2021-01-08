@@ -12,6 +12,7 @@ function loadArcadeGame(){
         let script = document.createElement('script')
             script.src = "avatarmovement.js"
             document.body.append(script)
+        loadTooltips()
     }
 
 function loadCharacterInfo(){
@@ -24,4 +25,14 @@ function loadCharacterInfo(){
     userCoinShow.textContent = `Coin: ${userCoin}`
     userCoinShow.classList.add('char-coin')
     characterInfoContainer.append(userNameShow, userCoinShow)
+}
+
+function loadTooltips(){
+    const tooltipContainer = document.querySelector('.tooltip')
+    console.log(tooltipContainer)
+    let instructions = document.createElement('p')
+    instructions.classList.add('startinginstructions')
+    instructions.innerHTML = 'To move your Avatar around the arcade use the WASD keys.<br>To interact with a game move your Avatar close and press the Enter key'
+    tooltipContainer.append(instructions)
+    setTimeout(() => { tooltipContainer.remove()}, 7000);
 }
