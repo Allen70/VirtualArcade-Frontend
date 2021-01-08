@@ -1,24 +1,10 @@
 body {
+    height: 942px;
     background-color: #c2c2c2;
 }
-
-.dungeon {
-    height: 100vh;
-    width: 100vw;
-    background-color: black ;
+.opacity-zero {
+    opacity: 0;
 }
-
-.dungeon-text-field {
-    color: blanchedalmond;
-    position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 700px;
-    word-wrap: normal;
-    font-size: 24px;
-}
-
 .screen { 
     position: fixed;
     top: 50px;

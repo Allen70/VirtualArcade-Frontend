@@ -46,8 +46,11 @@ function seekUserInput(currentBalance, cost) {
 function enterDungeon() {
     let arcade = document.querySelector('.arcade')
     arcade.classList.add('hidden')
+    let link = document.createElement('link')
+    link.href = "dungeon.css"
+    link.rel = 'stylesheet'
     let script = document.createElement('script')
     script.src = "dungeon.js"
-    document.body.append(script)
+    document.body.append(link,script)
 
 }

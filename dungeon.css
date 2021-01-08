@@ -1,0 +1,48 @@
+.dungeon {
+    height: 942px;
+    width: 100%;
+    background-color: black;
+}
+
+.dungeon-text-field {
+    color: blanchedalmond;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 700px;
+    word-wrap: normal;
+    font-size: 24px;
+}
+
+.selected {
+    background-color: rgb(56, 56, 56);
+}
+
+.dungeon-decision {
+    color: honeydew;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 600px;
+}
+
+.main-menu {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 4px;
+}
+
+.intro-text-in-short {
+    animation: 4s fadein;
+}
+
+.intro-text-in-long {
+    animation: 9s fadein;
+}
+.intro-text-out {
+    animation: 5s fadeout;
+}
+.to-grey {
+    animation: 4s togray;
+}
