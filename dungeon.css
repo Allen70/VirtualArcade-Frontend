@@ -19,6 +19,17 @@
     background-color: rgb(56, 56, 56);
 }
 
+#kidsmiling {
+    position: absolute;
+    left: 0px;
+    top: 44px;
+}
+#golemImage {
+    position: absolute;;
+    left: 400px;
+    top: 44px;
+}
+
 .dungeon-decision {
     color: honeydew;
     position: absolute;

@@ -7,6 +7,7 @@ function loadDungeon() {
     dungeon.classList.toggle('hidden')
     dungeonGameIntro()
 }
+
 function dungeonGameIntro(){
     DTF.classList.add('intro-text-in-long')
     DTF.textContent = "During an unpropitious and brisk morning in the bustling world of Eindor. A childs project would start its journey to save the world."
@@ -17,6 +18,10 @@ function dungeonGameIntro(){
 function run2ndPassage(){
     DTF.classList.replace('intro-text-out','intro-text-in-short')
     DTF.textContent = "The child tinkering with the first magical construct gave it a command."
+    let image = document.createElement('img')
+    image.id = 'golemImage'
+    image.src = '/littlegolemfriend.png'
+    DTF.append(image)
     setTimeout(() => { DTF.classList.replace('intro-text-in-short','intro-text-out')}, 4000);
     setTimeout(() => { run3rdPassage()}, 9000);
 }
@@ -24,9 +29,14 @@ function run2ndPassage(){
 function run3rdPassage() {
     DTF.classList.replace('intro-text-out','intro-text-in-short')
     DTF.textContent = "Do the best you can!"
+    let image = document.createElement('img')
+    image.id = 'kidsmiling'
+    image.src = '/kidsmiling.jpg'
+    DTF.append(image)
     setTimeout(() => { DTF.classList.replace('intro-text-in-short','intro-text-out')}, 4000);
     setTimeout(() => { run4thPassage()}, 9000);
 }
+
 function run4thPassage() {
     DTF.classList.replace('intro-text-out','intro-text-in-short')
     DTF.textContent = "They were the most inspiring words you've ever heard."
